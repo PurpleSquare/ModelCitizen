@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rep_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/rep_image"
+            android:paddingLeft="16dp"
+            android:src="@mipmap/ic_account_circle_white"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Representative Name"
+            android:layout_toEndOf="@+id/rep_image"
+            android:layout_toRightOf="@+id/rep_image"
+            android:id="@+id/rep_name"
+            android:textColor="#FFFFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/rep_office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Office"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/rep_image"
+            android:layout_toRightOf="@id/rep_image"
+            android:layout_below="@id/rep_name"
+            android:textColor="#FFFFFFFF"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rep_expandedView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/rep_email"
+            android:paddingLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_email_white" />
+        <ImageView
+            android:id="@+id/rep_phone"
+            android:paddingLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_phone_white" />
+        <ImageView
+            android:id="@+id/rep_twitter"
+            android:paddingLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_twitter_box_white" />
+        <ImageView
+            android:id="@+id/rep_facebook"
+            android:paddingLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_facebook_box_white" />
+        <ImageView
+            android:id="@+id/rep_google_plus"
+            android:paddingLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_google_plus_box_white" />
+        <ImageView
+            android:id="@+id/rep_youtube"
+            android:paddingLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_youtube_play_white" />
+    </LinearLayout>
+</LinearLayout>
